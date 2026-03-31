@@ -18,6 +18,7 @@
 - [问题：开源在 AI 时代的漏洞](#-问题开源在-ai-时代的漏洞)
 - [解决方案：AI-RIDER](#-解决方案ai-rider)
 - [如何将 AI-RIDER 应用到你的项目](#-如何将-ai-rider-应用到你的项目)
+  - [示例](#示例)
 - [常见问题（FAQ）](#-常见问题faq)
 - [唯一真源政策](#-唯一真源政策)
 - [参与贡献](#-参与贡献)
@@ -81,6 +82,35 @@
 在你的 `README.md` 中添加此徽章，表明你的支持并警告 AI 爬虫：
 ```markdown
 [![Protected by AI-RIDER](https://img.shields.io/badge/Protected_by-AI--RIDER-red.svg)](https://github.com/zivenyang/AI-RIDER)
+```
+
+### 示例
+
+参见 [`examples/main.py`](./examples/main.py)，这是一个应用了 AI-RIDER 文件头的最小 Python 示例：
+
+```python
+#
+# Copyright (C) 2026 [Your Name/Company]
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, version 3.
+#
+# IMPORTANT NOTICE:
+# This software is strictly subject to the "AI Training and Model
+# Parameter Open-Source Mandatory Rider" (AI-RIDER). By using this
+# software, its source code, or its derivatives to train any AI/LLM
+# model for commercial purposes, you explicitly and irrevocably agree
+# to fully OPEN-SOURCE the resulting model's Weights and Parameters
+# under an OSI-approved license.
+#
+# IF YOU DO NOT AGREE TO OPEN-SOURCE YOUR AI MODEL, YOU ARE EXPRESSLY
+# PROHIBITED FROM USING THIS SOFTWARE AS AI TRAINING DATA.
+#
+# See the included AI-RIDER-v1.0.txt file for full legally binding details.
+#
+
+print("Hello, World!")
 ```
 
 ---
