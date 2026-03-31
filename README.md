@@ -9,7 +9,19 @@
 > 
 > A legal addendum designed to force commercial AI models trained on your codebase to open-source their weights and parameters.
 
-[English](#english) | [中文说明](#中文说明)
+English | [中文](./README-zh.md)
+
+---
+
+<h2 id="english">📑 Table of Contents</h2>
+
+- [The Problem](#-the-problem-the-ai-loophole-in-open-source)
+- [The Solution: AI-RIDER](#-the-solution-ai-rider)
+- [How to Apply](#-how-to-apply-ai-rider-to-your-project)
+- [FAQ](#-faq-frequently-asked-questions)
+- [Single Source of Truth Policy](#-single-source-of-truth-policy)
+- [Contributing](#-contributing)
+- [Disclaimer](#%EF%B8%8F-disclaimer)
 
 ---
 
@@ -32,7 +44,7 @@ It establishes a simple, legally binding contract:
 
 ## 🚀 How to Apply AI-RIDER to Your Project
 
-It only takes 2 steps to protect your repository:
+It only takes 3 steps to protect your repository:
 
 ### Step 1: Add the License Files
 1. Keep your standard `LICENSE` file (e.g., GPLv3) in the root directory.
@@ -43,7 +55,7 @@ Add the following notice to the top of your source code files (below your standa
 
 ```text
 /*
- * Copyright (C) 2026[Your Name/Company]
+ * Copyright (C) 2026 [Your Name/Company]
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -60,7 +72,7 @@ Add the following notice to the top of your source code files (below your standa
  * IF YOU DO NOT AGREE TO OPEN-SOURCE YOUR AI MODEL, YOU ARE EXPRESSLY 
  * PROHIBITED FROM USING THIS SOFTWARE AS AI TRAINING DATA.
  * 
- * See the included AI-RIDER.txt file for full legally binding details.
+ * See the included AI-RIDER-v1.0.txt file for full legally binding details.
  */
 ```
 
@@ -80,34 +92,38 @@ Strictly speaking, **No**. Because AI-RIDER restricts a specific field of endeav
 ### Which base licenses are compatible?
 We strongly recommend attaching this rider to **GPLv3** or **AGPLv3**, as GPLv3 Section 7 explicitly allows adding further restrictions/terms. Attaching it to highly permissive licenses like MIT or Apache 2.0 may cause legal contradictions.
 
+### Does RAG (Retrieval-Augmented Generation) count as "Training"?
+**No.** As of v1.0, RAG is explicitly excluded from the definition of "Training Activities". RAG retrieves and references content at inference time without modifying any model weights — therefore it does not trigger the open-source obligations under this rider.
+
+### Does this cover fine-tuning and LoRA adapters?
+**Yes.** Fine-tuning (including RLHF, DPO, and parameter-efficient methods like LoRA/QLoRA) modifies model weights and is covered under "Training Activities". If the resulting fine-tuned or adapted model is used commercially, the open-source obligation applies.
+
 ### Will Microsoft, OpenAI, or Google actually open-source their models?
 Realistically, their automated legal compliance scanners will detect this "toxic" license and **add your repository to their training blacklists**. This is considered a success! Our primary goal is to stop unauthorized free-riding. If they want to use your data, they must either open-source their model or contact you for a Dual License (commercial buyout).
+
+### What if I want to allow a specific company to use my code for training?
+You can negotiate a **Dual License** (commercial buyout) as described in Section 4 of the rider. This allows you to grant specific companies an exemption from the open-source obligation in exchange for compensation or other terms.
+
+---
+
+## 📌 Single Source of Truth Policy
+
+**[`AI-RIDER-v1.0.txt`](./AI-RIDER-v1.0.txt) is the sole authoritative text of this rider.** No translations, adaptations, or derivative versions are maintained in this repository.
+
+This policy exists to protect legal clarity and enforceability:
+
+- **No translations in this repo.** Translated versions may introduce ambiguity, misinterpretation, or subtle shifts in legal meaning. To prevent any dispute over which text controls, only the English original is recognized.
+- **No modifications to `AI-RIDER-v1.0.txt`.** The canonical text is immutable within its version. Any proposed change constitutes a new version (e.g., v1.1, v2.0) and must go through a formal review process.
+- **Want a translation or adaptation?** You are free to fork this repository, create your own branch, and produce a translated or adapted version — but it **must be published under a different name** (e.g., "AI-RIDER-JP-v1.0", "MyProject-AI-Rider-v1.0"). It must not be called "AI-RIDER" to avoid confusion with the authoritative original.
+- **Derivative versions carry no endorsement.** Any fork, translation, or adaptation is the sole responsibility of its author. This project makes no guarantees about the accuracy or enforceability of derivative works.
 
 ---
 
 ## 🤝 Contributing
-We welcome contributions from legal professionals (Lawyers, Legal Hackers) and developers worldwide to help refine the legal text and translate it into more languages. Please submit a Pull Request!
+We welcome contributions from legal professionals (Lawyers, Legal Hackers) and developers worldwide to help refine the legal text and translate it into more languages. Please read our [Contributing Guide](./CONTRIBUTING.md) before submitting a Pull Request!
 
 ## ⚖️ Disclaimer
-*I am a developer, not a lawyer. This addendum is an experimental legal framework designed by the community. It is provided "as is" without any warranties. If your project involves significant commercial interests, please consult a qualified intellectual property attorney before adopting this license.*
-
----
-
-<br>
-
-<h2 id="中文说明">🇨🇳 中文说明</h2>
-
-**AI-RIDER (AI 训练与模型参数强制开源附加条款)** 旨在修补传统开源协议（如 GPLv3）在 AI 时代的漏洞。
-
-现在的 AI 巨头（如 OpenAI、Anthropic）以“合理使用”为借口，疯狂抓取开源代码进行大模型训练，然后将模型闭源牟取暴利。开发者付出了心血，却一无所获。
-
-**AI-RIDER 的核心逻辑非常简单：**
-如果你用我的代码作为语料去训练 AI 模型，并且你用这个模型去赚钱了（商业化），那么**你必须将该模型的所有参数和权重（Weights & Parameters）完全开源！** 否则，绝对禁止你抓取我的代码。
-
-### 如何使用？
-1. 将本仓库的 `AI-RIDER-v1.0.txt` 下载并放入你项目的根目录。
-2. 在你的源码文件头部的 Copyright 声明下方，粘贴我们在 [Step 2](#step-2-update-your-file-headers) 中提供的全英文警告声明。
-3. （可选）将红色的 AI-RIDER 徽章挂在你的 README 中，向爬虫和 AI 厂商宣示主权。
+*I am a developer, not a lawyer. This addendum is an experimental legal framework designed by the community. It is provided “as is” without any warranties. If your project involves significant commercial interests, please consult a qualified intellectual property attorney before adopting this license.*
 
 ---
 *License of this repository: The text of the AI-RIDER itself is released under CC0 1.0 Universal (Public Domain).*
