@@ -37,6 +37,7 @@ It establishes a simple, legally binding contract:
 1. **You train on my code:** You use this repository as a dataset, corpus, or for knowledge distillation.
 2. **You make money:** You use the resulting AI model for commercial purposes (paid APIs, SaaS, model selling).
 3. **You OPEN-SOURCE your model:** You are legally obligated to release the **complete weights, biases, and parameters** of your commercial model under an OSI-approved open-source license.
+4. **You use my code in RAG:** If your commercial service indexes this code for retrieval-augmented generation, you must clearly attribute the original project and inform end users that the code is protected under AI-RIDER.
 
 *If an AI company refuses to open-source their model parameters, they are strictly prohibited from scraping or using your code for training.*
 
@@ -93,7 +94,7 @@ Strictly speaking, **No**. Because AI-RIDER restricts a specific field of endeav
 We strongly recommend attaching this rider to **GPLv3** or **AGPLv3**, as GPLv3 Section 7 explicitly allows adding further restrictions/terms. Attaching it to highly permissive licenses like MIT or Apache 2.0 may cause legal contradictions.
 
 ### Does RAG (Retrieval-Augmented Generation) count as "Training"?
-**No.** As of v1.0, RAG is explicitly excluded from the definition of "Training Activities". RAG retrieves and references content at inference time without modifying any model weights — therefore it does not trigger the open-source obligations under this rider.
+**No.** RAG does not modify model weights and is not classified as a "Training Activity". However, if a commercial service indexes your code for RAG and serves it to users, **Section 3A** requires them to clearly attribute the original project (name, URL, copyright holder) and inform the end user that the code is protected under AI-RIDER. Failure to provide this attribution triggers the same breach consequences as any other violation.
 
 ### Does this cover fine-tuning and LoRA adapters?
 **Yes.** Fine-tuning (including RLHF, DPO, and parameter-efficient methods like LoRA/QLoRA) modifies model weights and is covered under "Training Activities". If the resulting fine-tuned or adapted model is used commercially, the open-source obligation applies.
