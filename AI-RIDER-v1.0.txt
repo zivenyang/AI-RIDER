@@ -2,7 +2,7 @@ SPDX-License-Identifier: CC0-1.0
 ======================================================================
 AI TRAINING AND MODEL PARAMETER OPEN-SOURCE MANDATORY RIDER (AI-RIDER)
 Version 1.0
-Published: 2026-03-31
+Published: 2026-04-01
 Canonical URL: https://github.com/zivenyang/AI-RIDER/blob/main/AI-RIDER-v1.0.txt
 ======================================================================
 
