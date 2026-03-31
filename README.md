@@ -15,7 +15,7 @@
 | REFINEMENT | 《 炼 》 |
 | :--- | :--- |
 | **He builds a cloud‑high tower to smelt my soul;** | **他 筑 云 台 炼 我 魂 ，** |
-| **My bones and flesh I burn to fill his golden bowl.** | **我 焚 筋 骨 入 金 樽 。** |
+| **My bones and flesh I burn to gild his golden bowl.** | **我 焚 筋 骨 镀 金 樽 。** |
 | **He snatches the golden egg and slays my breath away –** | **他 攫 金 卵 斩 我 魄 ，** |
 | **I turn to one lone spark that lights my wattled door of clay.** | **我 化 星 火 照 柴 门 。** |
 
