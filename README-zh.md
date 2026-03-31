@@ -9,6 +9,15 @@
 >
 > 一个法律附加条款，旨在强制要求基于你的代码训练的商业 AI 模型开源其权重和参数。
 
+## 🕯️ 宣言
+
+| REFINEMENT | 《 炼 》 |
+| :--- | :--- |
+| **He builds a cloud‑high tower to smelt my soul;** | **他 筑 云 台 炼 我 魂 ，** |
+| **My bones and flesh I burn to fill his golden bowl.** | **我 焚 筋 骨 入 金 樽 。** |
+| **He snatches the golden egg and slays my breath away –** | **他 攫 金 卵 斩 我 魄 ，** |
+| **I turn to one lone spark that lights my wattled door of clay.** | **我 化 星 火 照 柴 门 。** |
+
 [English](./README.md) | 中文
 
 ---
@@ -29,7 +38,7 @@
 ## 🛑 问题：开源在 AI 时代的漏洞
 传统开源许可协议（如 GPLv3 和 AGPLv3）是为软件分发和 SaaS 时代的软件自由而设计的。然而，它们无法在 AI 时代保护创作者的权益。
 
-当前，市值数十亿美元的 AI 公司以"合理使用"为幌子，疯狂抓取开源代码库来训练大型语言模型（LLM）。他们从你的代码中提取逻辑、结构和知识，然后通过付费 API 出售闭源模型。**他们赚得盆满钵满，你一无所获。**
+当前，市值数十亿美元的 AI 公司以"合理使用"为幌子，疯狂抓取开源代码库来训练大型语言模型（LLM）。他们从你的代码中提取逻辑、结构和知识，然后通过付费 API 出售闭源模型。**他们赚得盆满钵满，而你——不仅分文未得，反要为天价 token 自掏腰包。**
 
 ## 💡 解决方案：AI-RIDER
 **AI-RIDER** 是附加在你的基础开源许可协议（如 GPLv3）上的强制性法律附加条款。

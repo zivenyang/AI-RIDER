@@ -9,6 +9,16 @@
 > 
 > A legal addendum designed to force commercial AI models trained on your codebase to open-source their weights and parameters.
 
+
+## 🕯️ The Manifesto
+
+| REFINEMENT | 《 炼 》 |
+| :--- | :--- |
+| **He builds a cloud‑high tower to smelt my soul;** | **他 筑 云 台 炼 我 魂 ，** |
+| **My bones and flesh I burn to fill his golden bowl.** | **我 焚 筋 骨 入 金 樽 。** |
+| **He snatches the golden egg and slays my breath away –** | **他 攫 金 卵 斩 我 魄 ，** |
+| **I turn to one lone spark that lights my wattled door of clay.** | **我 化 星 火 照 柴 门 。** |
+
 English | [中文](./README-zh.md)
 
 ---
@@ -29,7 +39,7 @@ English | [中文](./README-zh.md)
 ## 🛑 The Problem: The AI Loophole in Open Source
 Traditional open-source licenses (like GPLv3 and AGPLv3) were designed to protect software freedom in the era of software distribution and SaaS. However, they fail to protect creators in the AI era. 
 
-Currently, multi-billion dollar AI companies scrape open-source repositories to train their Large Language Models (LLMs) under the guise of "Fair Use". They extract the logic, structures, and knowledge from your code, and then sell the resulting closed-source models via paid APIs. **They profit, you get nothing.**
+Currently, multi-billion dollar AI companies scrape open-source repositories to train their Large Language Models (LLMs) under the guise of "Fair Use". They extract the logic, structures, and knowledge from your code, and then sell the resulting closed-source models via paid APIs. **They stuff their coffers to overflowing, while you — not only receive nothing in return, but must also pay through the nose for their overpriced tokens.**
 
 ## 💡 The Solution: AI-RIDER
 **AI-RIDER** is a mandatory legal rider (addendum) attached to your base open-source license (such as GPLv3). 
